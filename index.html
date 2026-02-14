@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event</title>
+</head>
+<body>
+    <h1>DOM Doma Dom events</h1>
+    <!-- Option 1 for event handling -->
+    <button onclick="console.log(7)">Click Me</button>
+    <button onclick="console.log(63)">Another button</button>
+    <button onclick="console.log('I am clicked')">Third button</button>
+
+    <input type="text"><br>
+    <!-- Option 2 event handler -->
+     <button onclick="makeYellow()">Make Yellow</button>
+     <button onclick="makeRed()">Make red</button>
+     <br>
+     <button id="btn-make-blue">make blue</button>
+<br>
+<button id="btn-make-purple">make purple</button><br>
+<button id="btn-make-gold">Make Gold</button>
+
+<br>
+<!-- option 4 add evenlistener -->
+<button id="btn-make-green">Make Button Green</button>
+
+     <script>
+       document.getElementById('btn-make-green').addEventListener('click', function makeGreen(){
+        document.body.style.backgroundColor='green'
+       } )
+     document.getElementById('btn-make-gold').addEventListener('click', function btnMakeGold(){
+        document.body.style.backgroundColor='gold';
+     })
+     </script>
+    <script src="./js/event.js"></script>
+</body>
+</html>
